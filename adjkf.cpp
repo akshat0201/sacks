@@ -22,14 +22,15 @@ int main()
     }    
     ll ans = 0;
     ll a1 = 0, a2 = 0;
-    for(ll i=1; i<=1000; i++)
+    for(ll i=1; i<=10003; i++)         
     {
-        for(ll j=i; j<=1000; j+=i)
-        {
+        for(ll j=i; j<=10003; j+=i)
+        {    //Finding pairs of non equal array elements
             if(i!=j)
             {
               ans += temp[i]*temp[j];
             }
+            //Finding pairs of equal array elements
             if(i==j)
             {
               ans += ((temp[i]-1)*(temp[i]))/2;
