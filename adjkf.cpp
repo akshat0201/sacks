@@ -29,10 +29,6 @@ int main()
     {
         for(ll j=i; j<=1000; j+=i)
         {
-            if(i==j)
-            {
-              ans += ((temp[i]-1)*(temp[i]))/2;
-            }
             if(i!=j)
             {
               ans += temp[i]*temp[j];
